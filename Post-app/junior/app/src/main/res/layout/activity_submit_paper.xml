@@ -1,0 +1,192 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#22142B"
+    android:padding="16dp"
+    android:fillViewport="true"
+    android:fitsSystemWindows="true">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:gravity="center_horizontal">
+
+        <!-- 🔼 Spacer for status bar -->
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="24dp" />
+
+        <!--  Logo and Title  -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:gravity="center_vertical"
+            android:layout_marginBottom="24dp">
+
+            <ImageView
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:src="@drawable/logo"
+                android:layout_marginEnd="8dp"
+                android:contentDescription="App Logo"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="POSTGRADUATE RESEARCH SUPPORT MANAGEMENT"
+                android:textColor="#FFFFFF"
+                android:textStyle="bold"
+                android:textSize="14sp"
+                android:maxLines="2"/>
+        </LinearLayout>
+
+        <!-- Page Title -->
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Submit a Research Paper for Evaluation"
+            android:textColor="#FFFFFF"
+            android:textSize="22sp"
+            android:textStyle="bold"
+            android:layout_marginBottom="24dp"/>
+
+        <!-- Inputs -->
+        <EditText
+            android:id="@+id/etUniversity"
+            style="@style/QuotationInputStyle"
+            android:hint="University/College"/>
+
+        <EditText
+            android:id="@+id/etDepartment"
+            style="@style/QuotationInputStyle"
+            android:hint="Department/Faculty"/>
+
+        <EditText
+            android:id="@+id/etQualification"
+            style="@style/QuotationInputStyle"
+            android:hint="Qualification (certificate, diploma, degree etc.)"/>
+
+        <EditText
+            android:id="@+id/etResearchArea"
+            style="@style/QuotationInputStyle"
+            android:hint="Research area (e.g. machine learning)"/>
+
+        <!-- Reason Section -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/bg_card_rounded"
+            android:orientation="vertical"
+            android:elevation="4dp"
+            android:padding="16dp"
+            android:layout_marginBottom="24dp">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Reason for Research Paper Evaluation"
+                android:textSize="18sp"
+                android:textStyle="bold"
+                android:textColor="#22142B"
+                android:gravity="center"
+                android:layout_marginBottom="16dp"/>
+
+            <Button
+                android:id="@+id/btnReasonLanguage"
+                style="@style/QuotationReasonButtonStyle"
+                android:text="Language and grammar assessment"/>
+
+            <Button
+                android:id="@+id/btnReasonData"
+                style="@style/QuotationReasonButtonStyle"
+                android:text="Data and methodology assessment"/>
+
+            <Button
+                android:id="@+id/btnReasonValidity"
+                style="@style/QuotationReasonButtonStyle"
+                android:text="Validity and credibility assessment"/>
+        </LinearLayout>
+
+        <!-- Urgency Section -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/bg_card_rounded"
+            android:orientation="vertical"
+            android:elevation="4dp"
+            android:padding="16dp"
+            android:layout_marginBottom="24dp">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Urgency"
+                android:textSize="18sp"
+                android:textStyle="bold"
+                android:textColor="#22142B"
+                android:gravity="center"
+                android:layout_marginBottom="16dp"/>
+
+            <Button
+                android:id="@+id/btnUrgencyLow"
+                style="@style/QuotationReasonButtonStyle"
+                android:text="Low"/>
+
+            <Button
+                android:id="@+id/btnUrgencyMedium"
+                style="@style/QuotationReasonButtonStyle"
+                android:text="Medium"/>
+
+            <Button
+                android:id="@+id/btnUrgencyHigh"
+                style="@style/QuotationReasonButtonStyle"
+                android:text="High"/>
+        </LinearLayout>
+
+        <!-- Description -->
+        <EditText
+            android:id="@+id/etDescription"
+            style="@style/QuotationInputStyle"
+            android:hint="Description (e.g. evaluate if my research methods are appropriate)"
+            android:minLines="3"
+            android:gravity="top"/>
+
+        <!-- File Picker -->
+        <Button
+            android:id="@+id/btnChooseFile"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Choose File"
+            android:textAllCaps="false"
+            android:backgroundTint="#FFFFFF"
+            android:textColor="#000000"
+            android:layout_marginTop="16dp"/>
+
+        <TextView
+            android:id="@+id/tvFileName"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="No file chosen"
+            android:textColor="#AAAAAA"
+            android:layout_marginTop="8dp"/>
+
+        <!-- Submit -->
+        <Button
+            android:id="@+id/btnSubmit"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Submit"
+            android:textColor="#000000"
+            android:layout_marginTop="24dp"
+            android:background="@drawable/bg_rounded_button"
+            android:paddingStart="32dp"
+            android:paddingEnd="32dp"
+            android:layout_gravity="center_horizontal"/>
+
+    </LinearLayout>
+</ScrollView>

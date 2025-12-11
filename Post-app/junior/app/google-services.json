@@ -1,0 +1,49 @@
+{
+  "project_info": {
+    "project_number": "1047040061039",
+    "firebase_url": "https://postgraduateresearchsupport-default-rtdb.firebaseio.com",
+    "project_id": "postgraduateresearchsupport",
+    "storage_bucket": "postgraduateresearchsupport.firebasestorage.app"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:1047040061039:android:65a1c79bf26d2c22be679a",
+        "android_client_info": {
+          "package_name": "com.example.notepad"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAlZt4-nwe-qrYwDiHZFWuSfbQGrgAZBCg"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    },
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:1047040061039:android:de2781ab4e7cdcfbbe679a",
+        "android_client_info": {
+          "package_name": "com.example.post_grade"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAlZt4-nwe-qrYwDiHZFWuSfbQGrgAZBCg"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

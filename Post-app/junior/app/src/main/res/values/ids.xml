@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <item name="layoutHeader" type="id" />
+    <item name="imgHeaderIcon" type="id" />
+    <item name="tvHeaderTitle" type="id" />
+    <item name="tvNoSubmissions" type="id" />
+    <item name="scrollSubmissions" type="id" />
+    <item name="llSubmissionContainer" type="id" />
+    <item name="layoutSubmittedPapers" type="id" />
+</resources>

@@ -1,0 +1,163 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/rootLayout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#22142B">
+
+
+    <ScrollView
+        android:id="@+id/scrollConsultantDashboard"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:padding="16dp">
+
+        <LinearLayout
+            android:id="@+id/llDashboardContainer"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:gravity="center_horizontal"
+            android:paddingTop="48dp">
+
+
+            <LinearLayout
+                android:id="@+id/llLogoTitle"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:gravity="center_vertical"
+                android:layout_marginBottom="16dp">
+
+                <ImageView
+                    android:id="@+id/imgLogo"
+                    android:layout_width="40dp"
+                    android:layout_height="40dp"
+                    android:src="@drawable/logo"
+                    android:contentDescription="App Logo"
+                    android:layout_marginEnd="8dp" />
+
+                <TextView
+                    android:id="@+id/tvAppTitle"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="POSTGRADUATE RESEARCH SUPPORT MANAGEMENT"
+                    android:textColor="#FFFFFF"
+                    android:textStyle="bold"
+                    android:textSize="14sp"
+                    android:maxLines="2" />
+            </LinearLayout>
+
+
+            <LinearLayout
+                android:id="@+id/AIChat"
+                android:layout_width="match_parent"
+                android:layout_height="48dp"
+                android:layout_marginBottom="24dp"
+                android:background="@drawable/search_background"
+                android:gravity="center_vertical"
+                android:orientation="horizontal"
+                android:paddingStart="16dp"
+                android:paddingEnd="16dp"
+                android:clickable="true"
+                android:focusable="true">
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:text="How can I help you today?"
+                    android:textColor="#555555"
+                    android:textSize="14sp" />
+
+                <ImageView
+                    android:layout_width="24dp"
+                    android:layout_height="24dp"
+                    android:src="@drawable/chatbot"
+                    app:tint="#F65B70" />
+            </LinearLayout>
+
+
+            <TextView
+                android:id="@+id/tvDashboardHeading"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Consultant Dashboard"
+                android:textSize="20sp"
+                android:textStyle="bold"
+                android:textColor="#FFFFFF"
+                android:layout_marginBottom="24dp" />
+
+
+            <GridLayout
+                android:id="@+id/gridConsultantActions"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:columnCount="2"
+                android:alignmentMode="alignMargins"
+                android:useDefaultMargins="true"
+                android:columnOrderPreserved="false">
+
+
+                <LinearLayout
+                    android:id="@+id/btnSubmittedPapers"
+                    style="@style/ConsultantTileStyle"
+                    android:clickable="true"
+                    android:focusable="true">
+                    <ImageView
+                        android:id="@+id/iconSubmittedPapers"
+                        style="@style/TileIconStyle"
+                        android:src="@drawable/documents" />
+                    <TextView
+                        android:id="@+id/tvSubmittedPapers"
+                        style="@style/TileTextStyle"
+                        android:text="Submitted Papers" />
+                </LinearLayout>
+
+
+                <LinearLayout
+                    android:id="@+id/btnAddProfile"
+                    style="@style/ConsultantTileStyle"
+                    android:clickable="true"
+                    android:focusable="true">
+                    <ImageView
+                        android:id="@+id/iconAddProfile"
+                        style="@style/TileIconStyle"
+                        android:src="@drawable/user" />
+                    <TextView
+                        android:id="@+id/tvAddProfile"
+                        style="@style/TileTextStyle"
+                        android:text=" Profile" />
+                </LinearLayout>
+
+
+
+                <LinearLayout
+                    android:id="@+id/btnLogout"
+                    style="@style/ConsultantTileStyle"
+                    android:clickable="true"
+                    android:focusable="true">
+                    <ImageView
+                        android:id="@+id/iconLogout"
+                        style="@style/TileIconStyle"
+                        android:src="@drawable/logout" />
+                    <TextView
+                        android:id="@+id/tvLogout"
+                        style="@style/TileTextStyle"
+                        android:text="Log out" />
+                </LinearLayout>
+            </GridLayout>
+        </LinearLayout>
+    </ScrollView>
+
+
+    <LinearLayout
+        android:id="@+id/composeChatContainer"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="#FFFFFF"
+        android:visibility="gone"
+        android:orientation="vertical" />
+
+</FrameLayout>
